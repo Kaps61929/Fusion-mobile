@@ -84,17 +84,17 @@ class _BatchesState extends State<Batches> {
                     Tab(
                       child: Container(
                         child: Text(
-                          'Batches',
+                          'TimeTable',
                         ),
                       ),
                     ),
-                    Tab(
-                      child: Container(
-                        child: Text(
-                          'Finished Batches',
-                        ),
-                      ),
-                    ),
+                    // Tab(
+                    //   child: Container(
+                    //     child: Text(
+                    //       'Finished Batches',
+                    //     ),
+                    //   ),
+                    // ),
                   ],
                 ),
               ),
@@ -102,7 +102,7 @@ class _BatchesState extends State<Batches> {
               body: TabBarView(
                 children: [
                   BatchTabComponent(data: data_CurrentBatches),
-                  BatchTabComponent(data: data_FinishedBatches),
+                  //BatchTabComponent(data: data_FinishedBatches),
                 ],
               ),
             ),

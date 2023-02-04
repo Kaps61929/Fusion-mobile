@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
 import 'package:fusion/screens/Academic/Add_Drop_Courses/add_drop_courses.dart';
+import 'package:fusion/screens/Academic/Current_Semester/time_table.dart';
 import 'package:fusion/screens/Complaint/ComplaintHistory/complain_history.dart';
 import 'package:fusion/screens/Complaint/Feedback/feedback.dart';
 import 'package:fusion/screens/Complaint/LodgeComplaint/lodge_complaint.dart';
@@ -63,7 +64,7 @@ class MyApp extends StatelessWidget {
       title: 'Fusion',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(primarySwatch: Colors.blueGrey, fontFamily: 'Nunito'),
-      initialRoute: '/landing',
+      initialRoute: '/programme_curriculum_home',
       routes: {
         '/landing': (context) => LandingPage(),
         '/login_page': (context) => LoginPage(),
@@ -90,6 +91,7 @@ class MyApp extends StatelessWidget {
             ProgrammeInfo(),
         '/programme_curriculum_home/courses': (context) => Courses(),
         '/programme_curriculum_home/courses_info': (context) => CoursesInfo(),
+        '/programme_curriculum_home/TimeTable': (context) => TimeTable(),
         '/establishment': (context) => Establishment(),
         '/gymkhana_homepage': (context) => GymkhanaHomepage(),
         '/gymkhana_homepage/apply': (context) => Apply(),

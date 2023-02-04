@@ -175,6 +175,22 @@ class _ProgrammeCurriculumHomeState extends State<ProgrammeCurriculumHome> {
                         arguments: data);
                   },
                 ),
+                InkWell(
+                  child: myContainer("Time Table"),
+                  onTap: () {
+                    Navigator.pushNamed(
+                        context, '/programme_curriculum_home/batches',
+                        arguments: data);
+                  },
+                ),
+                InkWell(
+                  child: myContainer("Academic Calendar"),
+                  onTap: () {
+                    Navigator.pushNamed(
+                        context, '/programme_curriculum_home/batches',
+                        arguments: data);
+                  },
+                )
               ],
             ),
           ),
